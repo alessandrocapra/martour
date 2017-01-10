@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+      <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>MarTour - galleria virtuale</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="favicon.ico" />
+<link rel="stylesheet" type="text/css" href="css/jquery.panorama.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox-1.3.1.css" media="screen" />
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="../jquery.panorama.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("img.advancedpanorama").panorama({
+	                auto_start: 0,
+			start_position: 1527
+	         });
+	});
+</script>
+<script type="text/javascript" src="js/cvi_text_lib.js"></script>
+<script type="text/javascript" src="../jquery.advanced-panorama.js"></script>
+<script type="text/javascript" src="js/jquery.flipv.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox-1.3.1.pack.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('.fancybox').fancybox({
+ 'type':'iframe',
+ 'autoSize': true, 	 //or whatever you want
+ 'width': 500,	
+ 'height': 500
+});
+	});
+</script>
+
+<style  type="text/css">
+	body {
+		background: #AAADFF;
+		text-align: center;
+		position:relative;
+	}
+	
+	@font-face
+	{
+		font-family: Junction;
+		src: url(../../Junction.otf)
+	}
+	
+	h1 {
+		color: white;
+		text-transform:uppercase;
+		margin-bottom: 2em;
+		font: normal 50px 'Oswald', sans-serif;
+		font-weight:400;
+	}
+	#page {
+		text-align: center;
+		color: white;
+		position:absolute;
+		top:100px;right:0;bottom:0;left:0;
+	}
+	#page a {
+		color: white;
+	}
+	#page .panorama-viewport {
+		box-shadow: 0px 0px 10px 2px #FFF; 
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#page p {
+		margin-bottom: 1em;
+	}
+	
+	/*  EFFETTO PULSANTE INVIO*/
+
+.pulsante a {
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: rgba(0,76,126,1);
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 2em;
+    /*display: block;*/
+    padding: 4px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgba(0,34,56,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(0,34,56,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(0,34,56,1), 0px 9px 25px rgba(0,0,0,.7);
+    margin: 15px auto;
+	width: 160px;
+	text-align: center;
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+.pulsante a:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(0,34,56,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(0,34,56,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(0,34,56,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+}
+</style>
+</head>
+<body id="radial-center">
+<h1>"Ideologie: astrazione e realismo"</h1>
+
+<div id="page">
+	<img src="../../images/pano11.jpg" class="advancedpanorama" width="3000" height="450" usemap="testmap" />
+	<map id="testmap" name="testmap"> 
+		<area shape="rect" coords="2050,115,2210,282" href="salleformation.html"  /> 
+		<area shape="rect" coords="1860,120,2000,210" href="../../opera.html" class="fancybox" /> 
+		<area shape="rect" coords="1920,276,2070,351" href="../../opera.html" class="fancybox" /> 
+	</map>
+</div>
+</body>
+</html>

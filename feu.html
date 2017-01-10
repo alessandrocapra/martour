@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="cssOpere.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+	<title>Opera Feu</title>
+    
+    <script>
+		$(document).ready(function(e) {
+			$('#pulsanteOpera').click(function(){
+			   $(this).toggleClass('pulsante').toggleClass('pulsanteRimuovi');
+			});
+			
+			$('#thumbDown, #thumbUp').click(function(){
+    			$(this).addClass('opaque').siblings('.opaque').removeClass('opaque');
+			});
+		});
+	</script> 
+    
+</head>
+
+<body>
+	<div id="container">
+    	<div id="foto">
+        	<img src="images/feu.jpg">
+        </div>
+        <div id="descrizione">
+        	<p>Feu d’artifice presenta uno scenario plastico con solidi geometrici realizzati con strutture in legno, coperte da stoffe colorate e dipinte. All’interno di queste l’artista progettò l’inserimento di luci elettriche, da azionarsi ritmicamente, al fine di ottenere effetti di movimento e vitalità.</p>
+        </div>
+        <div id="nome_opera">
+        	<p class="title">Feu d'artifice - Giacomo Balla
+            <br>1916-1917</p>
+        </div> 
+        <div id="likeButtons">
+	            <p>Ti piace quest'opera?</p>
+            	<img id="thumbUp" src="images/thumbup.png">
+                <img id="thumbDown" src="images/thumbdown.png">
+        </div> 
+        <audio src="audio/feu.mp3" controls autoplay>
+	</div>
+</body>
+</html>

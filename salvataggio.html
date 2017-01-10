@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MarTour - Salvataggio</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="cssLoading.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="galleria/galleria-1.3.3.min.js"></script>
+</head>
+
+<body>
+	
+    <ul class="breadcrumb">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="gallerie.html">Gallerie</a></li>
+        <li><a href="selezione_opere.html">Opere</a></li>
+        <li><a href="apachot-jquery-virtual-tour-8dea9d1/demos/index.html">Tour virtuale</a></li>
+        <li><a href="riepilogo.html">Riepilogo</a></li>
+        <li><a href="#"class="breadcrumbSel">Salvataggio</a></li>
+    </ul>
+<div class="riquadro_introduzione">
+    	<p class="title">Salvataggio</p>
+        <p>Il tuo itinerario personalizzato è in fase di elaborazione, attendere prego..</p>
+  <div class='loader'>
+          <div class='circle'></div>
+          <div class='circle'></div>
+          <div class='circle'></div>
+          <div class='circle'></div>
+          <div class='circle'></div>
+        </div>
+  </div>
+    <div class="riquadro_content" style="display:none;">
+    	<p class="title">Tour pronto!</p>
+        <p>Clicca sul pulsante "Visualizza tour" per iniziare la tua visita personalizzata.</p>
+        <img src="images/mappa2d.jpg" width="90%" height="300" />
+        <div class="pulsante">
+	    	<a href="tabletLogin.html" style="left:40%;width:auto;">Visualizza tour</a>
+        </div>
+    </div>
+      <script>
+	   $(document).ready(function() {
+			setTimeout(function(){
+			$('.riquadro_content').fadeIn( "slow" );
+			$('.riquadro_introduzione').animate({height:150},800);
+			}, 5000);
+		});
+ </script>
+</body>
+</html>

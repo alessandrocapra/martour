@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Martour - Selezione percorso</title>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="apachot-jquery-virtual-tour-8dea9d1/demos/js/jquery.fancybox-1.3.1.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="apachot-jquery-virtual-tour-8dea9d1/demos/css/jquery.fancybox-1.3.1.css" media="screen" />
+<script type="text/javascript">
+	$(document).ready(function(){
+	  $('.fancybox').fancybox({
+ 			'type':'iframe',
+ 			'autoSize': true, 	 //or whatever you want
+			'width': 600,	
+			'height': 300
+		});
+	});
+</script>
+
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+
+html { 
+   width:100%; 
+   height:100%;
+   background:url(images/tablet2.png) center center no-repeat;
+}
+
+body{
+	position:relative;
+}
+
+#container{
+	position:absolute;
+	top:133px;
+	left:328px;
+	width:710px;
+	height:405px;
+
+	font: 16px 'Oswald', sans-serif;
+	font-weight: 400;
+	color:#666;
+}
+
+/*PULSANTE RIMUOVI OPERA*/
+
+.pulsanteRimuovi a {
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: rgba(240,67,0,1);
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 2em;
+    /*display: block;*/
+    padding: 4px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgba(173,42,0,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(173,42,0,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(173,42,0,1), 0px 9px 25px rgba(0,0,0,.7);
+    margin: 15px auto;
+	width: 160px;
+	text-align: center;
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+.pulsanteRimuovi a:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(0,34,56,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(0,34,56,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(0,34,56,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+}
+
+</style>
+</head>
+
+<body>
+	<div id="container">
+        <img src="images/mappa2d.jpg" width="710px" height="405px" usemap="#map">
+        <map name="map">
+          <area shape="rect" coords="80,0,146,40" href="feu.html" class="fancybox">
+          <area shape="rect" coords="322,158,388,190" href="boogie.html" class="fancybox">
+          <area shape="rect" coords="565,365,628,405" href="opera.html" class="fancybox">
+        </map>
+        <div class="pulsanteRimuovi">
+        	<a href="tabletPercorso.html" style="position:relative;top:-70px;left:105px;">Concludi tour</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MarTour - Selezione gallerie</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+	<script> 
+		window.onload = function() {
+		$(document).ready(function() {
+			$('.icona_galleria').click(function (event) {
+				event.preventDefault();
+        		$(this).closest('.icona_galleria').toggleClass("galleria_selezionata");
+				setTimeout(function(){window.location.href = "selezione_opere.html";}, 1000);
+    		})
+		});
+		}		
+	</script>
+
+    	<ul class="breadcrumb">
+        	<li><a href="home.html">Home</a></li>
+            <li><a href="#" class="breadcrumbSel">Gallerie</a></li>
+            <li><a href="selezione_opere.html">Opere</a></li>
+            <li><a href="apachot-jquery-virtual-tour-8dea9d1/demos/index.html">Tour virtuale</a></li>
+            <li><a href="riepilogo.html">Riepilogo</a></li>
+            <li><a href="salvataggio.html">Salvataggio</a></li>
+        </ul>
+	<div class="riquadro_introduzione">
+    	<p class="title">Seleziona galleria</p>	
+		<p>Benvenuto “nome utente”! <br /><br />Prima di iniziare il tuo tour, seleziona una galleria del nostro museo.</p>
+    </div>
+    <div class="riquadro_content">
+    	<p class="title">Quale galleria vorresti visitare?</p>
+        <div>
+	        <div class="icona_galleria num1">
+            	<p class="label-galleria">Galleria permanente</p>
+            </div>
+	        <div class="icona_galleria num2">
+            <p class="label-galleria">La Magnifica Ossessione</p>
+            </div>
+	        <div class="icona_galleria num3">
+            	<p class="label-galleria">Futurismo</p>
+            </div>
+	        <div class="icona_galleria num4">
+            	<p class="label-galleria">Impressionismo</p>
+            </div>
+	        <div class="icona_galleria num5">
+            	<p class="label-galleria">Puntinismo</p>
+            </div>
+	        <div class="icona_galleria num6">
+            	<p class="label-galleria">Street art</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="cssOpere.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+	<title>Opera Vedova</title>
+    
+    <script>
+		$(document).ready(function(e) {
+			$('#pulsanteOpera').click(function(){
+			   $(this).toggleClass('pulsante').toggleClass('pulsanteRimuovi');
+			});
+			
+			$('#thumbDown, #thumbUp').click(function(){
+    			$(this).addClass('opaque').siblings('.opaque').removeClass('opaque');
+			});
+		});
+	</script>
+    
+</head>
+
+<body>
+	<div id="container">
+    	<div id="foto">
+        	<img src="images/vedova.jpg">
+        </div>
+        <div id="descrizione">
+        	<p class="title">Uomo e macchina</p>
+            <p>Emilio Vedova<br>
+               1949<br>
+            </p>
+            <div id="likeButtons">
+	            <p>Ti piace quest'opera?</p>
+            	<img id="thumbUp" src="images/thumbup.png">
+                <img id="thumbDown" src="images/thumbdown.png">
+            </div>
+        </div>
+        <div id="pulsanteOpera" class="pulsante" style="padding: 30px 20px 0 0;float:right;">
+        	<a href="#"></a>
+		</div> 
+        <audio src="audio/deperomona.mp3" align="left"  lang="it" autoplay controls>   
+	</div>
+</body>
+</html>

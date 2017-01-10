@@ -1,0 +1,207 @@
+.panorama-viewport {
+	position: relative;
+	width: 600px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	cursor: -webkit-grab; 
+	cursor: -moz-grab;
+	margin-top:6%;
+}
+
+.panorama-viewport:active {
+	cursor: -webkit-grabbing; cursor: -moz-grabbing;
+}
+.panorama-container {
+	position: relative;
+	width: 100000px;
+	margin: 0;
+	padding: 0;
+
+}
+.panorama-control {
+	position: absolute;
+	display: none;
+	padding: 0;
+	margin: 0;
+	bottom: -1px;
+	left: 0;
+	width: 100%;
+	height: 30px;
+	background: black;
+	filter: alpha(opacity=50);
+	opacity: .5;
+	text-align: left;
+}
+.panorama-control-left, .panorama-control-right, .panorama-control-pause { 
+	float: left;
+	padding: 0;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+	line-height: 30px;
+	width: 33%;
+	text-align: center;
+	font-family: 'Arial',sans-serif
+}
+.panorama-control-left:hover, .panorama-control-right:hover, .panorama-control-pause:hover { 
+	text-decoration: none;
+}
+.panorama-control-pause {
+	text-transform: uppercase;
+}
+.panorama-panel {
+	position: absolute;
+	display: none;
+	top: 0;
+	right: 0;
+	background: #009cff;
+	filter: alpha(opacity=50);
+	opacity: .5;
+	color: white;
+	padding: 4px;
+}
+.panorama-panel h2 {
+	font-size: 11px;
+	text-transform: uppercase;
+	font-family: Arial, sans-serif;
+	text-align: right;
+}
+.panorama-panel ul {
+	display: none;
+}
+.panorama {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+.panorama-area {
+	border: 2px solid white;
+	filter: alpha(opacity=20);
+	opacity: .4;
+	background: rgb(224, 78, 78);
+	font-size: 100%;
+	cursor: pointer;
+	text-decoration: none;
+	color: white;
+	text-align: right;
+}
+.panorama-area-hover {
+	background: #0080e2;
+	cursor: pointer;
+} 
+
+.area0-hover {
+	background: #ff7e00;
+}
+.area1-hover {
+	background: #25bf5b;
+}
+.area2-hover {
+	background: #FC0;
+}
+
+.panorama-title {
+ 	position: absolute; 
+	right: 0;
+	top: 0; 
+	font-size: 16px; 
+	font-family: Verdana;
+	background: gray;
+	padding: 3px;
+	filter: alpha(opacity=50);
+	opacity: .5;
+}
+
+	#radial-center {
+  /* fallback */
+ background-image: linear-gradient(right bottom, rgb(47,77,77) 31%, rgb(96,147,194) 79%);
+background-image: -o-linear-gradient(right bottom, rgb(47,77,77) 31%, rgb(96,147,194) 79%);
+background-image: -moz-linear-gradient(right bottom, rgb(47,77,77) 31%, rgb(96,147,194) 79%);
+background-image: -webkit-linear-gradient(right bottom, rgb(47,77,77) 31%, rgb(96,147,194) 79%);
+background-image: -ms-linear-gradient(right bottom, rgb(47,77,77) 31%, rgb(96,147,194) 79%);
+
+background-image: -webkit-gradient(
+	linear,
+	right bottom,
+	left top,
+	color-stop(0.31, rgb(47,77,77)),
+	color-stop(0.79, rgb(96,147,194))
+);
+}
+
+/*PULSANTE RIMUOVI OPERA*/
+
+.pulsanteRimuovi a {
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: rgba(240,67,0,1);
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 2em;
+    /*display: block;*/
+    padding: 4px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgba(173,42,0,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(173,42,0,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(173,42,0,1), 0px 9px 25px rgba(0,0,0,.7);
+    margin: 15px auto;
+	width: 160px;
+	text-align: center;
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+.pulsanteRimuovi a:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(0,34,56,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(0,34,56,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(0,34,56,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+}
+
+.breadcrumb{
+	clear:both;
+	margin:25px auto;
+	width:95%;
+	padding:10px 20px;
+	background-color:#FFF;
+	opacity:0.9;
+	border-radius:35px;
+	text-align:justify;
+	list-style: none; 
+	overflow: hidden; 
+	font-size:18px;
+}
+
+.breadcrumb li { 
+	float: left; 
+}
+
+.breadcrumbSel {
+	background:hsla(237, 81%, 39%, 0.50);
+	border-radius:35px;
+	cursor:pointer;
+}
+
+.breadcrumb li a {
+	color: #333;
+	font: 1em 'Oswald';
+	text-decoration: none; 
+	padding: 10px 15px;
+	margin-left:100px;
+	position: relative; 
+	display: block;
+	float: left;
+}

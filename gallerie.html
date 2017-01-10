@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MarTour - Selezione gallerie</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+	<script> 
+		window.onload = function() {
+		$(document).ready(function() {
+			$('.icona_galleria').click(function (event) {
+				event.preventDefault();
+        		$(this).closest('.icona_galleria').toggleClass("galleria_selezionata");
+				setTimeout(function(){window.location.href = "selezione_opere.html";}, 1000);
+    		})
+		});
+		}		
+	</script>
+    
+	<div class="riquadro_introduzione">
+    	<p class="title">Seleziona galleria</p>	
+		<p>Benvenuto, seleziona qui di seguito una galleria per poter conoscere le opere che sono contenute in essa.</p><p>Potrai scegliere opere da un'altra galleria più avanti.</p>
+    </div>
+    <div class="riquadro_sotto">
+    	<p>Opere consigliate! (galleria jquery che scorre)</p>
+        <img class="ombrahover" src="images/gallcampari.jpg">
+    </div>
+    <div class="riquadro_content">
+    	<p class="title">Quale galleria vorresti visitare?</p>
+        <div>
+	        <div class="icona_galleria num1">
+            	<p class="label-galleria">Galleria 1</p>
+            </div>
+	        <div class="icona_galleria num2">
+            <p class="label-galleria">Galleria 2</p>
+            </div>
+	        <div class="icona_galleria num3">
+            	<p class="label-galleria">Galleria 3</p>
+            </div>
+	        <div class="icona_galleria num4">
+            	<p class="label-galleria">Galleria 4</p>
+            </div>
+	        <div class="icona_galleria num5">
+            	<p class="label-galleria">Galleria 5</p>
+            </div>
+	        <div class="icona_galleria num6">
+            	<p class="label-galleria">Galleria 6</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

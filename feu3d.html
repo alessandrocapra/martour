@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="cssOpere3d.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    
+	<title>Opera Feu</title>
+    
+    <script>
+		$(document).ready(function(e) {
+			$('#pulsanteOpera').click(function(){
+			   $(this).toggleClass('pulsante').toggleClass('pulsanteRimuovi');
+			});
+		});
+	</script> 
+    
+</head>
+
+<body>
+	<div id="container">
+    	<div id="foto">
+        	<img src="images/feu.jpg">
+        </div>
+        <div id="descrizione">
+        	<p class="title">Feu d'artifice</p>
+            <p>Giacomo Balla<br>
+               1916-1917<br>
+            </p>
+        </div>
+        <div id="pulsanteOpera" class="pulsante" style="padding: 30px 20px 0 0;float:right;">
+        	<a href="#"></a>
+		</div>    
+	</div>
+</body>
+</html>

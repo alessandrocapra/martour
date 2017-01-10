@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<style>
+*{
+	padding:0;
+	margin:0;
+}
+
+html { 
+   width:100%; 
+   height:100%; 
+   background:url(images/tablet2.png) center center no-repeat;
+}
+
+body{
+	position:relative;
+}
+
+#container{
+	position:absolute;
+	top:133px;
+	left:328px;
+	width:710px;
+	height:405px;
+	
+	font: 16px 'Oswald', sans-serif;
+	font-weight: 400;
+	color:#666;
+}
+
+#login {
+	background:rgba(255,255,255,0.85);
+	width:70%;
+	margin: -248.5px 0 0 -248.5px;
+	position:absolute;
+	left: 47%;
+	top: 87%;
+	border-radius:15px;
+	padding: 10px 20px;
+}
+
+.title{
+	font-size:26px;
+	font-weight:bold;
+	text-align:center;
+	padding-bottom:30px;
+}
+
+/*  EFFETTO PULSANTE INVIO*/
+
+.pulsante a {
+	position: relative;
+    color: rgba(255,255,255,1);
+    text-decoration: none;
+    background-color: rgba(0,76,126,1);
+    font-family: 'Oswald';
+    font-weight: 700;
+    font-size: 2em;
+    /*display: block;*/
+    padding: 4px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-shadow: 0px 9px 0px rgba(0,34,56,1), 0px 9px 25px rgba(0,0,0,.7);
+    -moz-box-shadow: 0px 9px 0px rgba(0,34,56,1), 0px 9px 25px rgba(0,0,0,.7);
+    box-shadow: 0px 9px 0px rgba(0,34,56,1), 0px 9px 25px rgba(0,0,0,.7);
+    margin: 15px auto;
+	width: 160px;
+	text-align: center;
+	
+	-webkit-transition: all .1s ease;
+	-moz-transition: all .1s ease;
+	-ms-transition: all .1s ease;
+	-o-transition: all .1s ease;
+	transition: all .1s ease;
+}
+
+.pulsante a:active {
+    -webkit-box-shadow: 0px 3px 0px rgba(0,34,56,1), 0px 3px 6px rgba(0,0,0,.9);
+    -moz-box-shadow: 0px 3px 0px rgba(0,34,56,1), 0px 3px 6px rgba(0,0,0,.9);
+    box-shadow: 0px 3px 0px rgba(0,34,56,1), 0px 3px 6px rgba(0,0,0,.9);
+    position: relative;
+    top: 6px;
+}
+
+/*  CASELLE DI INPUT TESTO  */
+input[type=email],input[type=text],input[type=password]
+{
+	padding: 5px;   
+    border: 1px solid #DDDDDD;
+    
+    /*Applying CSS3 gradient*/
+    background: -moz-linear-gradient(center top , #FFFFFF,  #EEEEEE 1px, #FFFFFF 20px);    
+    background: -webkit-gradient(linear, left top, left 20, from(#FFFFFF), color-stop(5%, #EEEEEE) to(#FFFFFF));
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FBFBFB', endColorstr='#FFFFFF');
+    
+    /*Applying CSS 3radius*/   
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    
+    /*Applying CSS3 box shadow*/
+    -moz-box-shadow: 0 0 2px #DDDDDD;
+    -webkit-box-shadow: 0 0 2px #DDDDDD;
+    box-shadow: 0 0 2px #DDDDDD;
+
+}
+
+input[type=email]:hover,input[type=text]:hover,input[type=password]:hover
+{
+    border:1px solid #cccccc;
+}
+
+input[type=email]:focus,input[type=text]:focus,input[type=password]:focus
+{
+    box-shadow:0 0 2px #FFFE00;
+}
+
+ul {  
+    padding: 0;  
+    margin: 0;  
+}  
+li {  
+	list-style-type:none; 
+	padding:2px 0; 
+}  
+
+</style>
+</head>
+
+<body>
+	<div id="container">
+		<div id="login">
+	        <p class="title">Login</p>
+            <form name="login" action="index_submit" method="get" accept-charset="utf-8">  
+    			<ul>
+                	<li><label for="username">Username</label> 
+        			<input style="margin-left:2.1em;" type="text" name="username" placeholder="MarioRossi75" required></li>   
+        			<li><label for="password">Password</label>  
+        			<input style="margin-left:2.40em;" type="password" name="password" placeholder="password" required></li>  
+        			<!-- <li><input type="submit" value="Login"></li>   -->
+                    <div class="pulsante">
+		                <a style="left:72%;top:-60px;" href="tabletPercorso.html">Login</a>
+                    </div>
+    			</ul>  
+			</form>
+        </div>
+    </div>
+</body>
+</html>

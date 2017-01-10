@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>MarTour - Selezione opere</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+</head>
+
+<body>
+    <script> 
+		window.onload = function() {
+		$(document).ready(function() {
+			$('.icona_galleria').click(function () {
+        		$(this).closest('.icona_galleria').toggleClass("opera_selezionata");
+    		})
+		});
+		}
+	</script>
+
+	<div class="riquadro_introduzione">
+    	<p class="title">Selezione opere</p>
+        <p>Ora inizia a creare il tuo itinerario!</br>Queste sono le opere che il museo ti consiglia.</p>
+        <p>&nbsp;</p>
+        <p>Seleziona l'opera tramite l'apposita checkbox accanto al nome dell'opera stessa.</br></br>
+        	Premi il pulsante AVANTI quando hai concluso le tue scelte!</p>
+    </div>
+    <div class="riquadro_content">
+    	<div style="padding-top:20px;padding-left:11px;">
+	        <div class="icona_galleria num1" id="divOpera1">
+            	<p class="label-galleria">Opera 1</p>
+            </div>
+	        <div class="icona_galleria num2">
+            	<p class="label-galleria">Opera 2</p>
+            </div>
+	        <div class="icona_galleria num3">
+            	<p class="label-galleria">Opera 3</p>
+            </div>
+	        <div class="icona_galleria num4">
+            	<p class="label-galleria">Opera 4</p>
+            </div>
+	        <div class="icona_galleria num5">
+            	<p class="label-galleria">Opera 5</p>
+            </div>
+	        <div class="icona_galleria num6">
+            	<p class="label-galleria">Opera 6</p>
+            </div>
+            <div class="pulsante">
+	           	<a href="apachot-jquery-virtual-tour-8dea9d1/demos/index.html" style="left:40%;">Avanti</a>
+            </div>
+        </div>
+    </div>
+</body>
+    
+</html>
